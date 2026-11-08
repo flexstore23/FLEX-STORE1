@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="FLEX STORE - شحن الألعاب، العروض، العضويات، وبيع وشراء الحسابات.">
+  <title>FLEX STORE | فلكس ستور</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#080808;--panel:#141414;--red:#ff2438;--red2:#a90018;--text:#f7f7f7;--muted:#bdbdbd}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 50% -20%,#4b0710 0,transparent 45%),var(--bg);color:var(--text);font-family:"Cairo",Tahoma,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#080808eF;border-bottom:1px solid #ffffff18;backdrop-filter:blur(12px)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 0;flex-wrap:wrap}
+    .brand{font-size:25px;font-weight:900;letter-spacing:1px;color:white;text-shadow:0 0 12px #ff2438}
+    .brand span{color:var(--red)}.links{display:flex;gap:17px;flex-wrap:wrap;font-size:14px;color:#ddd}
+    .links a:hover{color:var(--red)}
+    .hero{padding:76px 0 58px;text-align:center}
+    .tag{display:inline-block;border:1px solid #ff243866;color:#ff6674;border-radius:30px;padding:5px 15px;font-size:13px}
+    h1{font-size:clamp(38px,8vw,72px);line-height:1.2;margin:17px 0 8px;font-weight:900;text-shadow:0 0 25px #ff243866}
+    h1 span{color:var(--red)}.hero p{color:var(--muted);font-size:17px;margin:10px auto 25px;max-width:650px}
+    .btn{display:inline-block;background:linear-gradient(135deg,var(--red),var(--red2));padding:11px 22px;border-radius:9px;font-weight:800;box-shadow:0 0 20px #ff243833;transition:.2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 0 28px #ff243866}
+    section{padding:35px 0 48px}.section-title{text-align:center;margin:0 0 25px;font-size:28px}
+    .section-title:after{content:"";display:block;width:65px;height:3px;background:var(--red);margin:9px auto;border-radius:5px;box-shadow:0 0 12px var(--red)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:linear-gradient(145deg,#191919,#101010);border:1px solid #ffffff14;border-radius:15px;padding:22px;box-shadow:0 8px 25px #0008}
+    .icon{font-size:28px}.card h3{margin:8px 0;color:#fff;font-size:19px}.card p{color:var(--muted);font-size:14px;min-height:45px}
+    .small-btn{display:inline-block;margin-top:7px;border:1px solid #ff2438aa;color:#ff7b86;border-radius:8px;padding:7px 13px;font-size:13px;font-weight:700}
+    .small-btn:hover{background:#ff2438;color:#fff}
+    .notice{text-align:center;color:var(--muted);font-size:13px;margin:18px auto 0}
+    .contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+    .contact{background:#151515;border:1px solid #ffffff18;padding:16px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .contact strong{direction:ltr;font-size:17px}.wa{color:#69e39a;font-weight:800}
+    footer{border-top:1px solid #ffffff18;text-align:center;padding:23px 0;color:#999;font-size:13px}
+    @media(max-width:600px){nav{justify-content:center}.links{justify-content:center}.hero{padding-top:52px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">FLEX <span>STORE</span></a>
+  <div class="links">
+    <a href="#services">الخدمات</a><a href="#offers">العروض</a><a href="#accounts">الحسابات</a><a href="#contact">تواصل معنا</a>
+  </div>
+</nav></div></header>
+<main>
+  <section class="hero wrap" id="home">
+    <span class="tag">متجرك للألعاب والشحن</span>
+    <h1>FLEX <span>STORE</span></h1>
+    <p>شحن ID، شحن الأكونت، العروض والعضويات، وبيع وشراء الحسابات — تواصل معنا واطلب خدمتك بسهولة.</p>
+    <a class="btn" href="#services">استعرض الخدمات</a>
+  </section>
+  <section class="wrap" id="services">
+    <h2 class="section-title">خدماتنا</h2>
+    <div class="grid">
+      <article class="card"><div class="icon">💎</div><h3>شحن ID</h3><p>اطلب شحن الجواهر أو الرصيد عن طريق رقم الـ ID.</p><a class="small-btn" href="#contact">اطلب الشحن</a></article>
+      <article class="card"><div class="icon">🎮</div><h3>شحن الأكونت</h3><p>خدمة شحن لحسابك. ابعت بيانات الطلب للإدارة.</p><a class="small-btn" href="#contact">اطلب الشحن</a></article>
+      <article class="card" id="offers"><div class="icon">🔥</div><h3>عروض الضعف</h3><p>تابع العروض المتاحة واسأل عن السعر والتفاصيل الحالية.</p><a class="small-btn" href="#contact">اسأل عن العروض</a></article>
+      <article class="card"><div class="icon">👑</div><h3>العضويات</h3><p>استفسر عن العضويات المتاحة ومدتها وسعرها.</p><a class="small-btn" href="#contact">اعرف التفاصيل</a></article>
+      <article class="card" id="accounts"><div class="icon">🤝</div><h3>بيع وشراء الحسابات</h3><p>لبيع حسابك أو الاستفسار عن حسابات متاحة، تواصل مع الإدارة.</p><a class="small-btn" href="#contact">تواصل الآن</a></article>
+    </div>
+    <p class="notice">الأسعار والعروض تتغير؛ تواصل معنا لتأكيد السعر والتوافر قبل الدفع.</p>
+  </section>
+  <section class="wrap" id="contact">
+    <h2 class="section-title">تواصل مع FLEX STORE</h2>
+    <div class="contacts">
+      <div class="contact"><strong>01042893540</strong><a class="wa" target="_blank" rel="noopener" href="https://wa.me/201042893540">واتساب ↗</a></div>
+      <div class="contact"><strong>01095428705</strong><a class="wa" target="_blank" rel="noopener" href="https://wa.me/201095428705">واتساب ↗</a></div>
+      <div class="contact"><strong>01032575828</strong><a class="wa" target="_blank" rel="noopener" href="https://wa.me/201032575828">واتساب ↗</a></div>
+    </div>
+    <p class="notice">اضغط على واتساب للتواصل مباشرة مع الرقم الذي تختاره.</p>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> FLEX STORE — جميع الحقوق محفوظة</div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body></html>
